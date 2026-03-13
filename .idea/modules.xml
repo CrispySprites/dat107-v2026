@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/dat107-v2026.iml" filepath="$PROJECT_DIR$/.idea/dat107-v2026.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f1-1-personer-jdbc/f1-1-personer-jdbc.iml" filepath="$PROJECT_DIR$/f1-1-personer-jdbc/f1-1-personer-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f1-2-personer-jpa/f1-2-personer-jpa.iml" filepath="$PROJECT_DIR$/f1-2-personer-jpa/f1-2-personer-jpa.iml" />
+    </modules>
+  </component>
+</project>

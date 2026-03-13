@@ -22,3 +22,6 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+f1-1-personer-jdbc/src/no/hvl/dat107/Databaseoppsett.java
+f1-2-personer-jpa/src/META-INF/persistence.xml
+f1-2-personer-jpa/src/META-INF/persistence.xml

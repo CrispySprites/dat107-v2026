@@ -5,15 +5,15 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-//@Table(schema = "forelesning1")
+@Table(schema = "forelesning1")
 //@NamedQuery(name = "hentAllePersoner", query ="SELECT p FROM Person as p order by p.id")
 public class Person {
 	
-//	@Id
+	@Id
 	private Integer id;
 	private String navn;
 	
-//	public Person() {}
+	public Person() {}
 	
 	public Person(Integer id, String navn) {
 		this.id = id;
