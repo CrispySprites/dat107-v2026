@@ -8,10 +8,9 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
 public class TodoDAO {
-	
-	private EntityManagerFactory emf 
-			= Persistence.createEntityManagerFactory("todoPersistenceUnit", 
-			Map.of("jakarta.persistence.jdbc.password", Passwords.AZURE_PASSWORD));
+
+	private EntityManagerFactory emf
+			= Persistence.createEntityManagerFactory("todoPersistenceUnit");
 
 	/* --------------------------------------------------------------------- */
 
@@ -72,7 +71,7 @@ public class TodoDAO {
 
 	/* --------------------------------------------------------------------- */
 
-	public Object/*???*/ lagreNyTodo(/*???*/) {
+	public static void lagreNyTodo(Todo newTodo) {
 		
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction tx = em.getTransaction();
@@ -80,7 +79,7 @@ public class TodoDAO {
 		try {
 			tx.begin();
 			
-			/*???*/
+			em.persist(newTodo);
 			
 			tx.commit();
 			
@@ -92,8 +91,6 @@ public class TodoDAO {
 		} finally {
 			em.close();
 		}
-		
-		return null /*???*/; 
 	}
 
 	/* --------------------------------------------------------------------- */

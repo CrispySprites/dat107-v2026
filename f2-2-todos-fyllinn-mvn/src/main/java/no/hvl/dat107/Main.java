@@ -31,6 +31,11 @@ public class Main {
 		// c.iii) Hente ut LISTE av todos med tekst="Handle mat" 
 		// c.iv)  Hente ut LISTE av todos med tekst="Vaske bilen" (som ikke finnes)
 		// d) Legge til en ny todo med pk=4
+		Todo lekser = new Todo(4,  "Gjer lekse!!!");
+
+		TodoDAO.lagreNyTodo(lekser);
+
+
 		// e) Slette todo med pk=4
 		// f) Endre tekst på todo med pk=3
 		// g) Endre tekst på todo med pk=3, alternativ måte
